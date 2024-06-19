@@ -8,7 +8,7 @@ export default function ProductList() {
   return (
     <div className=''>
       <Header/>
-      <CarouselHead/> 
+      {/* <CarouselHead/>  */}
       <HomeDeals/>
       </div>
   )

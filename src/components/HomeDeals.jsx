@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
 import Card from '@mui/material/Card';
-export default function HomeDeals() {
-  return (
-    <div className='relative top-52'>
-      <h1 className='text-3xl px-6'>Top Deals on Fashion</h1>
-      {/* <card>
+import CardContent from '@mui/material/CardContent';
 
-      </card> */}
-    </div>
-  )
+export default function HomeDeals() {
+	return (
+		<Card variant='outlined' className='mt-8 m-3'>
+			<CardContent>
+				<div className=''>
+					<h1 className='text-2xl'>Top Deals on Fashion</h1>
+          
+				</div>
+			</CardContent>
+		</Card>
+	);
 }

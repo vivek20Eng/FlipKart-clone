@@ -79,24 +79,33 @@ export default function Carsosel({ data }) {
 		);
 	});
 
-
-const properties = {
-    prevArrow: <button className='h-[30%] text-black rounded-r-md w-8 bg-white'><KeyboardArrowLeftOutlinedIcon/></button>,
-    nextArrow: <button className='h-[30%] text-black rounded-l-md w-8 bg-white'><KeyboardArrowRightOutlinedIcon/></button>
-}
+	const properties = {
+		prevArrow: (
+			<button className='h-[30%] text-black rounded-r-md w-8 bg-white'>
+				<KeyboardArrowLeftOutlinedIcon />
+			</button>
+		),
+		nextArrow: (
+			<button className='h-[30%] text-black rounded-l-md w-8 bg-white'>
+				<KeyboardArrowRightOutlinedIcon />
+			</button>
+		)
+	};
 
 	return (
 		<>
-			<Slide
-				infinite
-        pauseOnHover
-        canSwipe
-        transitionDuration={500}
-        indicators={true}
-        {...properties}
-			>
-				{imageList}
-			</Slide>
+			<div className='mb-3'>
+				<Slide
+					infinite
+					pauseOnHover
+					canSwipe
+					transitionDuration={500}
+					indicators={true}
+					{...properties}
+				>
+					{imageList}
+				</Slide>
+			</div>
 		</>
 	);
 }

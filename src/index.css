@@ -14,3 +14,7 @@
     --primary-text-color: #111111;
     --secondary-color: #000000;
 }
+
+.indicators {
+    margin-top: -20px !important;
+}
